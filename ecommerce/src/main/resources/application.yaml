@@ -1,4 +1,7 @@
 spring:
+  docker:
+    compose:
+      enabled: false
   datasource:
     url: jdbc:h2:file:./data/ecommerce-db
     driver-class-name: org.h2.Driver
@@ -18,6 +21,12 @@ spring:
 
 server:
   port: 8080
+
+
+nmi:
+  apiUrl: https://secure.nmi.com/api/transact.php
+  partnerKey: v4_secret_588bxW36Ng7aZTtffefn74REMQ4YB62e
+  merchantKey: DA5ehrwDt6jksfa5e58Q79z5bX84ThZF
 
 logging:
   level:
